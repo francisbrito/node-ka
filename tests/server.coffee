@@ -24,8 +24,8 @@ topicsRouter.get '/:topic_slug/videos', (req, res) -> res.json topics[0].videos
 topicsRouter.get '/:topic_slug/exercises', (req, res) -> res.json topics[0].exercises
 
 # Badges endpoint
-badges = loadFixture 'test/fixtures/badges.json'
-badgeCategories = loadFixture 'test/fixtures/badge-categories.json'
+badges = loadFixture 'tests/fixtures/badges.json'
+badgeCategories = loadFixture 'tests/fixtures/badge-categories.json'
 
 badgesRouter = new Router
 badgesRouter.get '/', (req, res) -> res.json badges
